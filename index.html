@@ -1,15 +1,234 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="nl">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-
-    <!-- Bootstrap CSS (from CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylano Metten - Digital Designer & Developer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<p>Dylano Metten</p>
+<!-- Header -->
+<header>
+    <nav>
+        <div class="logo">DM</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Over Mij</a></li>
+            <li><a href="#projects">Projecten</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gaming">Gaming</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="portfolio/index.html">Portfolio WPL</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Dylano Metten</h1>
+            <p class="subtitle">Digital Designer & Developer</p>
+            <p>Ik ben een gedreven persoon voor de dingen die ik graag doe. Als een echte "Jack of all trades" heb ik een beetje talent in alles, maar focus ik me vooral op digitale vormgeving en development.</p>
+            <p>Mijn creativiteit kent geen grenzen, en ik ben constant op zoek naar nieuwe uitdagingen in de digitale wereld.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">Bekijk Mijn Werk</a>
+                <a href="#contact" class="btn btn-secondary">Contact</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Dylano Metten" class="profile-pic">
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="container" id="about">
+    <h2 class="section-title">Over Mij</h2>
+    <div class="about-grid">
+        <div class="about-card">
+            <h3>📍 Locatie</h3>
+            <p>Houthalen-Helchteren, België</p>
+        </div>
+        <div class="about-card">
+            <h3>🎓 Opleiding</h3>
+            <p>Digitale Vormgeving - 1ste jaar<br>PXL Hogeschool</p>
+        </div>
+        <div class="about-card">
+            <h3>🎮 Leeftijd</h3>
+            <p>20 jaar</p>
+        </div>
+    </div>
+
+    <div class="about-grid" style="margin-top: 2rem;">
+        <div class="about-card">
+            <h3>Waarom Digitale Vormgeving?</h3>
+            <p>Ik koos voor deze richting omdat ik graag met PC's en digitale instrumenten in het algemeen werk en er graag over leer. De combinatie van creativiteit en technologie spreekt me enorm aan.</p>
+        </div>
+        <div class="about-card">
+            <h3>Wat maakt mij een goede designer?</h3>
+            <p>Mijn creativiteit kan erg ver gaan. Ik ben niet bang om buiten de gebaande paden te denken en nieuwe dingen te proberen. Als "Jack of all trades" kan ik mij snel aanpassen aan verschillende tools en technieken.</p>
+        </div>
+        <div class="about-card">
+            <h3>Hobbies</h3>
+            <p>Gaming is mijn grote passie. Ik probeer altijd nieuwe games uit en leer over verschillende verhalen in games, zodat ik overal het verhaal een beetje van ken. Dit helpt me ook bij mijn creatief proces.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="container" id="projects">
+    <h2 class="section-title">Mijn Projecten</h2>
+    <div class="projects-grid">
+        <!-- Project 1: Muziek Website -->
+        <div class="project-card">
+            <img src="images/project-muziek.jpg" alt="Muziek Website" class="project-image">
+            <div class="project-content">
+                <span class="project-tag">Web Essentials</span>
+                <h3>Mijn Muziek Website</h3>
+                <p>We hebben een website gemaakt voor muziek. Eerst onze favoriete nummer en onze favoriete albums. Op het laatste nog een korte beschrijving van verschillende concerten.</p>
+                <p><strong>Mijn taken:</strong> HTML en CSS structuur opzetten en een YouTube embed integreren voor de muziek.</p>
+                <div class="project-tools">
+                    <span class="tool-tag">HTML</span>
+                    <span class="tool-tag">CSS</span>
+                    <span class="tool-tag">YouTube Embed</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Photoshop -->
+        <div class="project-card">
+            <img src="images/project-photoshop.jpg" alt="Photoshop Project" class="project-image">
+            <div class="project-content">
+                <span class="project-tag">Graphic Skills</span>
+                <h3>Social Media Designs</h3>
+                <p>We hebben onze PE moeten maken waar we een voorbeeld voor hadden. Ik ben hier te werk gegaan met de meeste tools die we in de les hebben gezien. Ik heb dan ook 80 procent voor deze taak gehad.</p>
+                <p><strong>Mijn taken:</strong> Het namaken van een voorbeeld gegeven door de leerkracht met verschillende Photoshop technieken.</p>
+                <div class="project-tools">
+                    <span class="tool-tag">Photoshop</span>
+                    <span class="tool-tag">Design</span>
+                    <span class="tool-tag">Social Media</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: Pokedex -->
+        <div class="project-card">
+            <img src="images/project-pokedex.jpg" alt="Pokedex" class="project-image">
+            <div class="project-content">
+                <span class="project-tag">Web Essentials</span>
+                <h3>Pokédex Website</h3>
+                <p>Bij 1 van de taken in Web Essentials hebben we een pokédex moeten namaken. Dit was 1 van mijn favoriete taken. Ik heb deze ook perfect na gemaakt.</p>
+                <p><strong>Mijn taken:</strong> HTML en CSS gebruiken om een functionele pokédex te creëren met kaarten en styling.</p>
+                <div class="project-tools">
+                    <span class="tool-tag">HTML</span>
+                    <span class="tool-tag">CSS</span>
+                    <span class="tool-tag">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4: Illustrator - Guts -->
+        <div class="project-card">
+            <img src="images/project-guts.jpg" alt="Guts Illustrator" class="project-image">
+            <div class="project-content">
+                <span class="project-tag">Persoonlijk Project</span>
+                <h3>Guts Character Illustration</h3>
+                <p>Een tekening langs Illustrator van het karakter Guts uit een fantasy boek. Het verhaal gaat over een man met veel pijn in zijn leven die toch ergens iemand kan vertrouwen.</p>
+                <p><strong>Mijn taken:</strong> Een gedetailleerde vector illustratie maken van een complexe character design met verschillende lagen en details.</p>
+                <div class="project-tools">
+                    <span class="tool-tag">Illustrator</span>
+                    <span class="tool-tag">Vector Art</span>
+                    <span class="tool-tag">Character Design</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="container" id="skills">
+    <h2 class="section-title">Mijn Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>🎨 Design Tools</h3>
+            <ul class="skill-list">
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>💻 Development</h3>
+            <ul class="skill-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>⚡ Andere Skills</h3>
+            <ul class="skill-list">
+                <li>UI/UX Design</li>
+                <li>Vector Graphics</li>
+                <li>Social Media Design</li>
+                <li>Web Development</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Gaming Section -->
+<section class="container" id="gaming">
+    <h2 class="section-title">Gaming Passie</h2>
+    <div class="gaming-showcase">
+        <h3>🎮 Mijn Liefde Voor Gaming</h3>
+        <div class="gaming-content">
+            <div class="gaming-text">
+                <p>Gaming is meer dan een hobby voor mij - het is een passie. Ik game vooral buiten school en probeer altijd nieuwe spellen uit. Door verschillende game-verhalen te verkennen, leer ik niet alleen over storytelling, maar ook over visueel design en user experience.</p>
+                <p>Deze kennis pas ik ook toe in mijn design werk, waar ik interactieve en boeiende ervaringen probeer te creëren.</p>
+            </div>
+            <div>
+                <h4 style="color: var(--accent); margin-bottom: 1rem;">Waarom Gaming Belangrijk Is:</h4>
+                <ul class="favorite-games">
+                    <li>🎯 Storytelling & Narratieve Structuur</li>
+                    <li>🎨 Visueel Design & UI/UX</li>
+                    <li>⚡ Interactieve Ervaringen</li>
+                    <li>🌍 Wereld-building & Creativiteit</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="container" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <h3>📧 Email</h3>
+            <a href="mailto:dylano.metten@student.pxl.be">dylano.metten@student.pxl.be</a>
+        </div>
+        <div class="contact-card">
+            <h3>💻 GitHub</h3>
+            <a href="https://github.com/DylanoMettenPXL" target="_blank">DylanoMettenPXL</a>
+        </div>
+        <div class="contact-card">
+            <h3>📱 Instagram</h3>
+            <a href="https://instagram.com/mettendylan" target="_blank">@mettendylan</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Dylano Metten. Alle rechten voorbehouden.</p>
+    <p><a href="privacy.txt" target="_blank">Privacy-richtlijnen</a></p>
+    <p style="margin-top: 1rem; font-size: 0.9rem;">Gemaakt met HTML, CSS & JavaScript | AI-tool gebruikt: Claude (Anthropic)</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
